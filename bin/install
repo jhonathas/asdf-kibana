@@ -43,7 +43,7 @@ untar_path() {
   local version=$2
   local tmp_download_dir=$3
 
-  ls -lha $tmp_download_dir
+  ls -lha $tmp_download_dir | xargs echo
 
   if [ "$install_type" = "version" ]
   then
