@@ -24,8 +24,8 @@ install_kibana() {
   # because we don't want to disturb current working dir
   (
     cd $(dirname $source_path)
-    gzip -dc $source_path | tar -xvzf -
-    # tar -xf $source_path || exit 1
+    # gzip -dc $source_path | tar -xvzf -
+    tar -zxf $source_path # || exit 1
     cd $(untar_path $install_type $version $tmp_download_dir)
 
 
