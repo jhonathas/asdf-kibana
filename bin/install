@@ -45,9 +45,9 @@ untar_path() {
 
   if [ "$install_type" = "version" ]
   then
-    echo "$tmp_download_dir/kibana-${version}"
+    echo "$tmp_download_dir/kibana-${version}.tar.gz"
   else
-    echo "$tmp_download_dir/kibana-${version}"
+    echo "$tmp_download_dir/kibana-${version}.tar.gz"
   fi
 }
 
